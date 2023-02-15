@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+    font-family: "Ubuntu", sans-serif;
+}
+
+header {
+    height: 10vh;
+    background-color: dodgerblue;
+    color: white;
+
+}
+
+header h1 {
+    padding: 15px 25px;
+}
+
+form {
+    max-width: 500px !important;
+    margin: 15px auto;
+}
+
+fieldset {
+    border-color: rgb(11, 12, 12);
+    border-radius: 25px;
+    background-color: rgba(200, 201, 201, 0.534);
+}
+
+form div.input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+form div label {
+    letter-spacing: 5px;
+    font-weight: bold;
+
+}
+
+label::first-letter {
+    font-size: 25px;
+    color: rgb(209, 3, 3);
+}
+
+/* input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid rgb(4, 4, 8);
+    height: 1.8rem;
+} */
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #3b5998;
+    color: #3b5998;
+}
+
+form div.button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+input[type="submit"] {
+    justify-content: center;
+    height: 1.8rem;
+    background-color: green;
+    border: 2px solid green;
+    color: aliceblue;
+    border-radius: 15px;
+    width: 140px;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    justify-content: center;
+    height: 1.8rem;
+    background-color: red;
+    border: 2px solid rgb(218, 3, 3);
+    color: aliceblue;
+    border-radius: 15px;
+    width: 140px;
+    font-weight: bold;
+}
+
+form div.button input:hover {
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+div p {
+    background-color: rgba(13, 189, 189, 0.247);
+    line-height: 25px;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+div.reponse {
+    margin: 15px auto;
+    max-width: 500px;
+
+}
+
+.reponse li {
+    list-style: none;
+    text-align: center;
+
+}
+
+.reponse li a {
+    text-decoration: none;
+    background-color: rgb(216, 214, 212);
+    color: #000;
+    box-shadow: 2px 1px 2px 2px rgb(14, 8, 8);
+}
+
+.reponse li a:hover {
+    border-bottom: 3px solid rgb(7, 4, 1);
+}
+
+label::after {
+    content: "*";
+    position: relative;
+    color: red;
+}
+.lien{
+    margin: 10vh auto;
+    width: 500px;
+    padding: 5px 15px;
+
+}

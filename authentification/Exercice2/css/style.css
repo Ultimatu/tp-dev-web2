@@ -1,0 +1,361 @@
+/* Fichier CSS */
+
+/* styles pour les formulaires */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: -20px;
+  height: 15vh;
+  background-color: #3b5998;
+  padding-top: 3vh;
+  color: rgb(255, 252, 252);
+  font-family: "Ubuntu";
+}
+
+h1 {
+  margin: 15px auto;
+  max-width: 400px;
+}
+h3{
+  font-size: 15px;
+}
+.container{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+}
+@media (max-width:350px) {
+  
+  form div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  legend{
+    font-size: 10px !important;
+  }
+  .table tr{
+    font-size: 5px !important;
+  }
+  
+}
+@media (max-width:400px) {
+  header h1{
+    font-size: 15px !important;
+  }
+}
+@media (max-width:776px) {
+  .modif,
+    .sup {
+      justify-content: space-between !important;
+      text-align: center;
+      gap: 15px !important;
+      width: 95% !important;
+    }
+    
+}
+@media (max-width:576px) {
+
+  .table {
+      font-size: 8px !important;
+      max-width: 98% !important;
+  }
+
+}
+@media (min-width:576px) {
+
+  .container{
+    max-width: 540px
+  }
+  
+ 
+}
+
+@media (min-width:768px) {
+
+  .container{
+    max-width: 720px
+  }
+}
+
+@media (min-width:992px) {
+
+  .container{
+    max-width: 960px
+  }
+}
+
+@media (min-width:1200px) {
+
+  .container{
+    max-width: 1140px
+  }
+}
+
+@media (min-width:1400px) {
+
+  .container{
+    max-width: 1320px
+  }
+}
+/* form {
+  width: 80%;
+  margin: 5vh auto;
+
+} */
+
+.index {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 95%;
+  text-align: center;
+}
+.modif, sup{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 60%;
+  margin: 15px auto;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .form-control {
+    transition: none
+  }
+}
+
+.form-control[type=file] {
+  overflow: hidden
+}
+
+.form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+.form-control::-webkit-date-and-time-value {
+  height: 1.5em
+}
+
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1
+}
+
+.form-control:disabled {
+  background-color: #e9ecef;
+  opacity: 1
+}
+
+.form-control::-webkit-file-upload-button {
+  padding: .375rem .75rem;
+  margin: -.375rem -.75rem;
+  -webkit-margin-end: .75rem;
+  margin-inline-end: .75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.form-control::file-selector-button {
+  padding: .375rem .75rem;
+  margin: -.375rem -.75rem;
+  -webkit-margin-end: .75rem;
+  margin-inline-end: .75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .form-control::-webkit-file-upload-button {
+    -webkit-transition: none;
+    transition: none
+  }
+
+  .form-control::file-selector-button {
+    transition: none
+  }
+}
+
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+  background-color: #dde0e3
+}
+
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: #dde0e3
+}
+
+form div {
+  display: flex;
+  justify-content: space-between !important;
+  margin-bottom: 15px;
+}
+
+/* styles pour les boutons */
+.btn , .index a{
+  background-color: #3b5998;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+}
+/* styles pour les alertes de réussite */
+#success_message {
+  margin: 25px;
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* styles pour les alertes d'erreur */
+#error_message {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+/* styles pour la table */
+.table {
+  width: 97%;
+  border-collapse: collapse;
+  margin: 15px auto;
+}
+
+.table th,
+.table td {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: center;
+}
+.table td{
+  background-color: rgba(15, 113, 224, 0.918);
+  color: white;
+}
+.table th{
+  background-color: orange;
+}
+td.action{
+  display: flex;
+  justify-content: space-between;
+}
+.table a{
+  color: white !important;
+  border-bottom: 2px solid white;
+}
+span{
+  height: 2vh;
+  background-color: white;
+}
+
+
+input {
+  text-transform: capitalize;
+  width: 50% !important;
+}
+input[type="text"]:focus {
+  border-bottom: 2px solid #3b5998;
+  color: #3b5998;
+}
+.hide{
+  display: none;
+  transition: all ease-in-out 1s;
+
+}
+fieldset{
+  border-radius: 15px;
+}
+legend{
+  margin-left: 25px;
+  font-weight: bold;
+  background-color: rgba(31, 129, 7, 0.068) !important;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2.5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 5px solid crimson;
+}
+h1::first-letter{
+  font-size: 55px;
+  color: crimson;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+div.deconnect{
+  margin: 45px 20px;
+  width: 200px;
+  line-height: 2rem;
+  background-color: rgb(156, 109, 109);
+  text-align: center;
+  border-radius: 15px;
+  
+}
+.deconnect a{
+  color: rgb(255, 255, 255) !important;
+  font-size: 25px;
+}
