@@ -14,6 +14,11 @@ if (mysqli_num_rows($res) > 0) {
     $error_message = "<h3 class='error_message'>Ces données existent déjà</h3>";
     $permission = false;
 }
+else if(empty($titre) || empty($auteur) || empty($date_creation)){
+    $_GET["error"] = "";
+    $error_message = "<h3 class='error_message'>Remplissez les champs vide</h3>";
+    $permission = false;
+}
 else{
     $permission = true;
 }
