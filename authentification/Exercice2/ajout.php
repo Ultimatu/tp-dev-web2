@@ -5,9 +5,7 @@ if ($_SESSION['CONNECT'] != 'OK') {
   header('Location: login.php');
   exit;
 } 
-else {
-  $_SESSION["CONNECT"] = "visited";
-}
+
 
 //connection à la base
 include("connect_database.php");
@@ -115,15 +113,15 @@ mysqli_close($conn);
               <legend>Ajouter un exercice</legend>
               <div class="form-group">
                   <label for="titre">Titre de l'exercice</label>
-                  <input type="text" name="titre" class="form-control" id="titre" required>
+                  <input type="text" name="titre" class="form-control" id="titre" >
               </div>
               <div class="form-group">
                   <label for="auteur">Auteur de l'exercice</label>
-                  <input type="text" name="auteur" class="form-control" id="auteur" required>
+                  <input type="text" name="auteur" class="form-control" id="auteur" >
               </div>
               <div class="form-group">
                   <label for="date_creation">Date de création</label>
-                  <input type="date" name="date_creation" class="form-control" id="date_creation" required>
+                  <input type="date" name="date_creation" class="form-control" id="date_creation" >
               </div>
               <div class="index">
                   <div><button type="submit" name="submit" class="btn btn-primary index">Ajouter</button></div>

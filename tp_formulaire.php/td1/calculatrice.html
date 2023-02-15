@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+  </head>
+  <body>
+    <form action="calculatrice.php" method="post">
+      <input type="text" name="operande1" required />
+      <br /><br />
+      <input type="text" name="operande2" required />
+      <br /><br />
+      <label for="addition">Addition</label>
+      <input
+        type="radio"
+        id="addition"
+        name="operation"
+        value="addition"
+        required
+      />
+      <br />
+      <label for="soustraction">Soustraction</label>
+      <input
+        type="radio"
+        id="soustraction"
+        name="operation"
+        value="soustraction"
+        required
+      />
+      <br />
+      <label for="multiplication">Multiplication</label>
+      <input
+        type="radio"
+        id="multiplication"
+        name="operation"
+        value="multiplication"
+        required
+      />
+      <br />
+      <label for="division">Division</label>
+      <input
+        type="radio"
+        id="division"
+        name="operation"
+        value="division"
+        required
+      />
+      <br /><br />
+      <input type="submit" value="Calculer" />
+    </form>
+  </body>
+</html>
