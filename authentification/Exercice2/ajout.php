@@ -108,7 +108,7 @@ mysqli_close($conn);
       // Suppression des variables d'erreur après 5 secondes
       
       ?>
-      <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
+      <form  method="post">
           <fieldset>
               <legend>Ajouter un exercice</legend>
               <div class="form-group">
